@@ -7,6 +7,31 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Label Content="RegnskabsAppen" FontSize="20" Padding="20" Margin="10"/>
+        <Label Content="Aktiver" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="29,110,0,0"/>
+
+        <Label Content="Immaterielle anlægsaktiver" HorizontalAlignment="Left" Margin="29,145,0,0" VerticalAlignment="Top"/>
+        <Label Content="Materielle anlægsaktiver" HorizontalAlignment="Left" Margin="29,165,0,0" VerticalAlignment="Top"/>
+        <Label Content="Finansielle anlægsaktiver" HorizontalAlignment="Left" Margin="29,185,0,0" VerticalAlignment="Top"/>
+        <Label Content="Anlægsaktiver i alt" FontWeight="Bold" HorizontalAlignment="Left" Margin="29,205,0,0" VerticalAlignment="Top"/>
+
+        <TextBox x:Name="txtBox_ImmaAnlæg" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding Path=ImmaterielleAktiver}" VerticalAlignment="Top" Width="120" Margin="214,145,0,0"/>
+        <TextBox x:Name="txtBox_MaterAnlæg" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding Path=Materielle}" VerticalAlignment="Top" Width="120" Margin="214,169,0,0"/>
+        <TextBox x:Name="txtBox_FinansAnlæg" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding Path=Finansielle}" VerticalAlignment="Top" Width="120" Margin="214,189,0,0"/>
+        <TextBox x:Name="txtBox_AnlægIAlt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding Path=AnlaegsAktiverIAlt}" VerticalAlignment="Top" Width="120" Margin="214,209,0,0"/>
+
+        <Label Content="Varebeholdning" HorizontalAlignment="Left" Margin="29,235,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tilgodehavender fra salg" HorizontalAlignment="Left" Margin="29,265,0,0" VerticalAlignment="Top"/>
+        <Label Content="Øvrige tilgodehavender" HorizontalAlignment="Left" Margin="29,285,0,0" VerticalAlignment="Top"/>
+        <Label Content="Likivide beholdninger" HorizontalAlignment="Left" Margin="29,305,0,0" VerticalAlignment="Top"/>
+        <Label Content="Omsætningsaktiver i alt" FontWeight="Bold" HorizontalAlignment="Left" Margin="29,325,0,0" VerticalAlignment="Top"/>
+        <Label Content="Aktiver i alt" FontWeight="Bold" HorizontalAlignment="Left" Margin="29,345,0,0" VerticalAlignment="Top"/>
+
+        <Label Content="Passiver" FontSize="15" HorizontalAlignment="Left" Margin="378,110,0,0" VerticalAlignment="Top"/>
+
+        <Label Content="Aktiekapital" HorizontalAlignment="Left" Margin="378,145,0,0" VerticalAlignment="Top"/>
+        <Label Content="Forslag til årets udbytte" HorizontalAlignment="Left" Margin="378,165,0,0" VerticalAlignment="Top"/>
+        <Label Content="Overført resultat m.m." HorizontalAlignment="Left" Margin="378,185,0,0" VerticalAlignment="Top"/>
+        <Label Content="Egenkapital i alt" FontWeight="Bold" HorizontalAlignment="Left" Margin="378,205,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

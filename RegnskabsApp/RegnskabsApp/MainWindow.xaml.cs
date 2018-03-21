@@ -20,9 +20,12 @@ namespace RegnskabsApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        Aktiver akt = new Aktiver();
+        Passiver pass = new Passiver();
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = akt;
         }
     }
 }
